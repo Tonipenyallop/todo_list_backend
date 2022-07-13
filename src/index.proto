@@ -1,0 +1,17 @@
+syntax = "proto3";
+package index;
+
+option go_package = "./proto";
+
+
+service AddTodo {
+    rpc getAddTodorequest(AddTodoRequest) returns (AddTodoResponse);
+}
+
+message AddTodoRequest {
+    string todo = 1;
+}
+
+message AddTodoResponse {
+
+}
